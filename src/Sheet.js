@@ -5,6 +5,7 @@ const Sheet = (props) => {
   const [isLoading, setIsLoading] = useState(false);
   const [sheetTitle, setSheetTitle] = useState('');
   const [sheetData, setSheetData] = useState([]);
+  const [discount, setDiscount] = useState('');
   const SheetId = props.sheetId;
   const doc = new GoogleSpreadsheet(SheetId); //spreadshhet Id
   doc.useApiKey('AIzaSyChaG9155ErqsNOXPAi_5s4VlajbRj17VM'); // google project api key
